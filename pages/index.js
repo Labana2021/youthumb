@@ -73,7 +73,7 @@ const Index = () => {
                   className="btn-blue mt-2"
                   onClick={() => openImageInNewTab(option.url)}
                 >
-                  DownloadImage
+                  Download Image
                 </button>
               </div>
             ))}
