@@ -11,7 +11,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="YouTube Thumbnail Grabber Saver" />
           <meta property="og:description" content="Download and save YouTube thumbnails easily with our grabber and saver tool." />
           <meta property="og:image" content="URL_TO_YOUR_THUMBNAIL_IMAGE" />
-          <meta property="og:url" content="https://www.youtubethumbnailsdownloads.com" /> //-- Replace with your website URL /
+          <meta property="og:url" content="https://www.youtubethumbnailsdownloads.com" />
           <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="YouTube Thumbnail Grabber Saver" />
