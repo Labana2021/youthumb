@@ -27,14 +27,9 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Main />
-          // Include the AdSense ad unit in the header
-          <div class="header-ad">
-            <ins class="adsbygoogle"
-              style="display:block"
-              data-ad-client="YOUR_ADSENSE_CLIENT_ID"
-              data-ad-slot="YOUR_ADSENSE_SLOT_ID"
-              data-ad-format="auto"></ins>
-          </div>
+
+
+
           <NextScript />
         </body>
       </Html>
