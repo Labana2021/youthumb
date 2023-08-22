@@ -24,13 +24,13 @@ input[type="text"] {
 }
 
 /* Add some spacing between input and button */
-input[type="text"] + button {
+input[type="text"]+button {
   margin-top: 0.5rem;
 }
 
 /* Style the "Download Thumbnails" button */
 .btn-blue {
-  background-color: #3498db;
+  background-color: #ff8000;
   color: white;
   font-weight: bold;
   padding: 0.5rem 1rem;
