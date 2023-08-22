@@ -37,15 +37,15 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/favicon/site.webmanifest" />
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-     // Google Analytics
+          {/* Google Analytics */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-XT1TR5ED66"></script>
           <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)};
+            function gtag()dataLayer.push(arguments);
             gtag('js', new Date());
             gtag('config', 'G-XT1TR5ED66');
           </script>
-          // End Google Analytics
+          {/* End Google Analytics */}
         </Head>
         <body>
           <Main />
