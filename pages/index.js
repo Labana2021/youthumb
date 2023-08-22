@@ -32,16 +32,9 @@ const Index = () => {
     }
   };
 
-  // Function to handle image download
-  const handleImageDownload = (imageUrl, fileName) => {
-    // Create an anchor element to trigger the download
-    const anchor = document.createElement('a');
-    anchor.href = imageUrl;
-    anchor.download = fileName;
-    anchor.click();
-
-    // Remove the anchor element
-    document.body.removeChild(anchor);
+  // Function to open image in a new tab
+  const openImageInNewTab = (imageUrl) => {
+    window.open(imageUrl, "_blank");
   };
 
   return (
@@ -76,17 +69,12 @@ const Index = () => {
             {thumbnailOptions.map((option, index) => (
               <div key={index} className="thumbnail-option">
                 <img src={option.url} alt={`Thumbnail ${index + 1}`} />
-                <a
-                  href={option.url}
-                  download={`Thumbnail_${index + 1}.jpg`}
+                <button
                   className="btn-blue mt-2"
-                  onClick={(e) => {
-                    e.preventDefault(); // Prevents navigation
-                    handleImageDownload(option.url, `Thumbnail_${index + 1}.jpg`);
-                  }}
+                  onClick={() => openImageInNewTab(option.url)}
                 >
-                  Download Image
-                </a>
+                  Open Image in New Tab
+                </button>
               </div>
             ))}
           </div>
