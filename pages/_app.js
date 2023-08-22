@@ -2,8 +2,8 @@ import "../styles/index.css";
 import { Fragment } from "react";
 import { DefaultSeo } from "next-seo";
 import Script from "next/script";
-import GoogleAnalytics from "@bradgarropy/next-google-analytics/dist/types/components/GoogleAnalytics/GoogleAnalytics";
-
+import { useEffect } from 'react';
+import { initGA, logPageView } from 'analytics.js';
 function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
@@ -19,10 +19,22 @@ function MyApp({ Component, pageProps }) {
         }}
       />
 
-      <GoogleAnalytics measurementId="G-XT1TR5ED66" />
+
       <Component {...pageProps} />
     </Fragment>
+
   );
+  function MyApp({ Component, pageProps }) {
+    useEffect(() => {
+      if (!window.GA_INITIALIZED) {
+        initGA();
+        window.GA_INITIALIZED = true;
+      }
+      logPageView();
+    }, []);
+
+    return <Component {...pageProps} />;
+  }
 }
 
 export default MyApp;
