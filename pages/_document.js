@@ -5,7 +5,15 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <!-- Google tag (gtag.js) -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-XT1TR5ED66"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
+            gtag('config', 'G-XT1TR5ED66');
+          </script>
           <meta name="description" content="Your YouTube thumbnail download grabber saver description here" />
           <meta name="keywords" content="YouTube, thumbnail, download, grabber, saver" />
           <meta name="author" content="Your Name" />
@@ -37,15 +45,7 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/favicon/site.webmanifest" />
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          {/* Google Analytics */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-XT1TR5ED66"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag()dataLayer.push(arguments);
-            gtag('js', new Date());
-            gtag('config', 'G-XT1TR5ED66');
-          </script>
-          {/* End Google Analytics */}
+
         </Head>
         <body>
           <Main />
