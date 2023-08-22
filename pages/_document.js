@@ -1,11 +1,12 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import GoogleAnalytics from "@bradgarropy/next-google-analytics/dist/types/components/GoogleAnalytics/GoogleAnalytics";
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
-
+          <GoogleAnalytics measurementId="G-XT1TR5ED66" />
           <meta name="description" content="Your YouTube thumbnail download grabber saver description here" />
           <meta name="keywords" content="YouTube, thumbnail, download, grabber, saver" />
           <meta name="author" content="Your Name" />
